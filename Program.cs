@@ -95,11 +95,11 @@ namespace ConsumeAPIData
             string enddate;
             while (true) 
             {
-                Console.WriteLine("Enter start date of domain creation (FORMAT - YYYY/MM/DD): ");
+                Console.WriteLine("Enter start date of domain creation (FORMAT - YYYY-MM-DD): ");
                 startdate = Console.ReadLine();
                 bool valid1 = ValidateDate(startdate);
 
-                Console.WriteLine("Enter end date of domain creation (FORMAT - YYYY/MM/DD): ");
+                Console.WriteLine("Enter end date of domain creation (FORMAT - YYYY-MM-DD): ");
                 enddate = Console.ReadLine();
                 bool valid2 = ValidateDate(enddate);
                 if (valid1 && valid2) { break; } else { Console.WriteLine("\nInvalid date\n"); continue;}
